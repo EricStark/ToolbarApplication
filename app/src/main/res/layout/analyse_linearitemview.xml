@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/xinhao"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:src="@drawable/router"
+       app:civ_border_color="@color/blue"
+        app:civ_border_width="2dp"
+        app:civ_border_overlay="false"/>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_below="@id/xinhao"
+        android:progress="100"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signal - 1"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/xinhao"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is the power of signal 1,click here you can see details of this signal."
+        android:textColor="#212121"
+        android:layout_toRightOf="@id/xinhao"
+        android:layout_marginTop="60dp"
+        android:textSize="13dp"/>
+</RelativeLayout>

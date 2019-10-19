@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#90caf9">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/meinv"
+        app:civ_fill_color="#f6f7f6"
+        app:civ_border_overlay="false"
+        app:civ_border_color="@color/grey"
+        android:layout_centerInParent="true"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        app:civ_fill_color="#F6F7F6"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_overlay="true"
+        android:src="@drawable/back"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:padding="8dp"
+        android:id="@+id/tv"
+        android:textColor="#F6F7F6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="please select your signal."
+        android:textSize="30dp"
+
+        android:layout_alignParentBottom="true"
+        android:textStyle="italic"/>
+    <LinearLayout
+        android:layout_below="@id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    </LinearLayout>
+
+</RelativeLayout>

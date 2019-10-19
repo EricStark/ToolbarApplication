@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdSignalActivity">
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_pen"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pen"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/et_fre"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:hint="请输入信号采集频率/s"
+            android:layout_marginTop="20dp"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+
+    <com.example.java.toolbarapplication.SimpleChartView
+        android:id="@+id/simpleChartView3"
+        android:layout_below="@id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="445dp"
+        android:background="#1e88e5"
+        android:text="提   交   数   据"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/bt_back3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1e88e5"
+        android:layout_below="@id/ll"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="530dp"
+        android:text="返       回"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

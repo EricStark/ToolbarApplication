@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/g1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/signal1"
+            android:title="联  通  信  号   "
+            android:icon="@drawable/signal"/>
+    </group>
+    <group android:id="@+id/g2" android:checkableBehavior="single">
+        <item
+            android:id="@+id/signal2"
+            android:title="移  动  信  号  "
+            android:icon="@drawable/signal" />
+    </group>
+    <group android:id="@+id/g3" android:checkableBehavior="single">
+        <item
+            android:id="@+id/signal3"
+            android:title="电  信  信  号  "
+            android:icon="@drawable/signal"/>
+    </group>
+    <group android:id="@+id/g5" android:checkableBehavior="single">
+        <item android:id="@+id/analyse"
+            android:title="进 行 信 号 分 析 计 算"
+            android:icon="@drawable/signal"/>
+    </group>
+    <group android:id="@+id/g4" android:checkableBehavior="single">
+        <item
+            android:id="@+id/result"
+            android:title="查  看  匹  配  结  果"
+            android:icon="@drawable/result"/>
+    </group>
+
+</menu>

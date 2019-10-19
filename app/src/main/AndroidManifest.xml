@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.java.toolbarapplication">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FirstSignalActivity" />
+        <activity android:name=".SecondSignalActivity" />
+        <activity android:name=".ThirdSignalActivity" />
+
+        <service
+            android:name=".CaculateService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".Analyse_ResultActivity" />
+        <activity android:name=".Signal1Activity" />
+        <activity android:name=".Signal2Activity" />
+        <activity android:name=".Signal3Activity" />
+        <activity android:name=".Signal4Activity" />
+        <activity android:name=".Signal5Activity" />
+        <activity android:name=".Signal6Activity" />
+        <activity android:name=".Signal7Activity" />
+        <activity android:name=".Signal8Activity" />
+        <activity android:name=".Signal9Activity" />
+        <activity android:name=".Signal10Activity" />
+        <activity android:name=".Signal11Activity" />
+        <activity android:name=".Signal12Activity"></activity>
+    </application>
+
+</manifest>
